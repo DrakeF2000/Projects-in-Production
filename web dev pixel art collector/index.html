@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator</title>
+
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <h1>Pixel Art Creator</h1>
+    <hr>
+    <div>
+        <input type="color" value="#0000ff" id="color_selector"> <input type="text" id="canvas_width_adjust" placeholder="Width in pixels"><input type="text" id="canvas_height_adjust" placeholder="Height in pixels">
+    </div>
+    <hr>
+    <div>
+        <button onclick="download()" class="button-89">Download!</button><button onclick="make_eraser()" class="button-89">🗞️</button><button onclick="change_canvas_size()" class="button-89">Change Size!</button>
+    </div>
+    <hr>
+    <div>
+        <canvas id="user_canvas" width="400" height="400"></canvas>
+    </div>
+</body>
+</html>

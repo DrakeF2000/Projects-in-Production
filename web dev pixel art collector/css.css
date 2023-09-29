@@ -1,0 +1,86 @@
+body {
+    background: #0f2027; /* fallback for old browsers */
+    background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+    color: #fff;
+  }
+
+canvas{
+    background-color: white;
+}
+
+input{
+    border: none;
+    padding: none;
+    margin: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+#color_selector{
+    height: 25px;
+    width: 25px;
+}
+
+button{
+    margin: 10px;
+}
+
+div{
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    background-color: #203a43;
+    background-image: linear-gradient(to right,#0f2027, #203a43, #2c5364, transparent);
+    border: 0;
+    width: 80%;
+}
+
+h1 { 
+    text-align: center;
+    color: #ffffff; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 62px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: white;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
